@@ -6,8 +6,9 @@ $(document).ready(function(){
     });
 
 
+    //progress-bar
     const bars = document.querySelectorAll('.progress_bar');
-    bars.forEach(function(bar){
+    bars.forEach((bar)=>{
         let parcentage = bar.dataset.parcent;
         let tooltip = bar.children[0];
         tooltip.innerText = parcentage + '%';
@@ -15,5 +16,33 @@ $(document).ready(function(){
         // console.log(parcentage);
     })
 
-    
+
+
+    //counter
+    const counters = document.querySelectorAll('.counter');
+    console.log(counters);
+
+    const runCounter = () => {
+        counters.forEach(counter => {
+            counter.innerText = 0;
+            let target = +counter.dataset.count;
+            let step = target/100;
+
+            let countIt = () => {
+                let displayedCount = +counter.innerText;
+                if(displayedCount < target){
+                    counter.innerText = Math.ceil(displayedCount + step);
+                    setTimeout(countIt, 1);
+                }else{
+                    counter.innerText = target;
+                }
+            }
+            countIt();
+        })
+    }
+    runCounter();
+
+    let counterSection = document.querySelectorAll('.counter_section');
+
+    const se
 })
