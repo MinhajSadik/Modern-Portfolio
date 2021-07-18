@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     //counter
     const counters = document.querySelectorAll('.counter');
-    console.log(counters);
+    // console.log(counters);
 
     const runCounter = () => {
         counters.forEach(counter => {
@@ -40,9 +40,26 @@ $(document).ready(function(){
             countIt();
         })
     }
-    runCounter();
 
-    let counterSection = document.querySelectorAll('.counter_section');
+    // let counterSection = document.querySelectorAll('.counter_section');
 
-    const se
+    // let options = {
+    //     rootMargin : '0px 0px -200px 0px'
+    // }
+
+    // let done = 0;
+
+    // const sectionObserver = new IntersectionObserver(function(entries){
+
+    //     if(entries[0].isIntersecting && done !== 1){
+    //         done = 1;
+        runCounter();
+            
+    //     }
+    // }, options)
+
+    // sectionObserver.observe(counterSection);
 })
+
+
+
