@@ -27,6 +27,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.avatar_block img {
+  width: 110px;
+  height: 130px;
+}
 body {
   font-family: "IBM plex Sans", sans-serif;
   background: var(--dark);
