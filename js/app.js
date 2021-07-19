@@ -62,6 +62,14 @@ $(document).ready(function(){
         // }, options)
 
         // sectionObserver.observe(counterSection);
+
+        
+
+
+        // image filter
+
+        let $wrapper = $('.portfolio_wrapper');
+        
 });
 
 
