@@ -26,12 +26,12 @@ $(document).ready(function(){
         counters.forEach(counter => {
             counter.innerText = 0;
             let target = +counter.dataset.count;
-            let step = target/100;
+            // let step = target/100;
 
             let countIt = () => {
                 let displayedCount = +counter.innerText;
                 if(displayedCount < target){
-                    counter.innerText = Math.ceil(displayedCount + step);
+                    counter.innerText = Math.ceil(displayedCount + 1); //replace 1 and set step it's divided by 100 this progress number
                     setTimeout(countIt, 1);
                 }else{
                     counter.innerText = target;
