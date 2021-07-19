@@ -555,7 +555,8 @@ section.contact .wrapper .right .form_group > div label {
   color: var(--ternary);
   margin-bottom: 8px;
 }
-section.contact .wrapper .right .form_group > div input {
+section.contact .wrapper .right .form_group > div input,
+section.contact .wrapper .right .form_group.textarea_wrapper textarea {
   padding: 10px;
   border-radius: 4px;
   background: transparent;
@@ -564,7 +565,8 @@ section.contact .wrapper .right .form_group > div input {
   font-size: 16px;
 }
 
-section.contact .wrapper .right .form_group > div input:focus {
+section.contact .wrapper .right .form_group > div input:focus,
+section.contact .wrapper .right .form_group.textarea_wrapper textarea:focus {
   border-color: var(--secondary);
   outline: none;
 }
@@ -572,4 +574,18 @@ section.contact .wrapper .right .form_group > div input:focus {
 section.contact .wrapper .right .form_group.textarea_wrapper {
   display: block;
   width: 100%;
+}
+section.contact .wrapper .right button {
+  background: var(--info);
+  border: none;
+  padding: 1rem 2rem;
+  color: var(--pure);
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+section.contact .wrapper .right button:hover {
+  background: var(--secondary);
 }
