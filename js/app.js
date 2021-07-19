@@ -39,27 +39,30 @@ $(document).ready(function(){
             }
             countIt();
         })
+
     }
 
-    // let counterSection = document.querySelectorAll('.counter_section');
+        // let counterSection = document.querySelectorAll('.counter_section');
+        // console.log(counterSection);
 
-    // let options = {
-    //     rootMargin : '0px 0px -200px 0px'
-    // }
-
-    // let done = 0;
-
-    // const sectionObserver = new IntersectionObserver(entries =>{
-
-        // if(entries[0].isIntersecting /*&& done !== 1*/ ){
-            // done = 1;
-        runCounter();
-            
+        // const options = {
+        //     rootMargin: '0px 0px -200px 0px'
         // }
-    // }, /*options*/)
 
-    // sectionObserver.observe(counterSection);
-})
+        // let done = 0;
+
+        // const sectionObserver = new IntersectionObserver(function(entries){
+
+        //     if(entries[0].isIntersecting && done !== 1){
+        //         console.log('intersecting...');
+        //         done = 1;
+                runCounter();
+        //     }
+
+        // }, options)
+
+        // sectionObserver.observe(counterSection);
+});
 
 
 
