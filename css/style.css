@@ -411,6 +411,8 @@ section.counter_section > div h5 {
 section.work .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 60px;
 }
 
 section.work .wrapper .portfolio .tabs ul {
@@ -449,4 +451,125 @@ section.work .wrapper .portfolio .portfolio_wrapper a img {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+section.work .wrapper .slider_wrapper .icon_wrap {
+  color: var(--info);
+  font-size: 26px;
+  text-align: center;
+}
+
+section.work .wrapper .slider_wrapper .slider .slide p {
+  color: var(--ternary);
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+section.work .wrapper .slider_wrapper .slider .slide img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+section.work .wrapper .slider_wrapper .slider .slide h2 {
+  font-size: 16px;
+  color: var(--info);
+  margin-top: 1rem;
+}
+
+section.work .wrapper .slider_wrapper .slider .slide h6 {
+  color: var(--ternary);
+  margin-top: 1rem;
+}
+
+section.work .wrapper .slider_wrapper .slider .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.work .wrapper .slider_wrapper {
+  overflow: hidden;
+}
+
+section.partners .brands_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section.contact .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 60px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+section.contact .wrapper .left > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+section.contact .wrapper .left > div div:nth-child(1) {
+  margin-right: 10px;
+}
+
+section.contact .wrapper .left i {
+  font-size: 30px;
+  color: var(--info);
+}
+
+section.contact .wrapper .left h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+section.contact .wrapper .left {
+  color: var(--ternary);
+}
+
+section.contact .wrapper .left h4 + span {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+section.contact .wrapper .right .form_group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+section.contact .wrapper .right .form_group > div {
+  display: flex;
+  flex-direction: column;
+}
+section.contact .wrapper .right .form_group > div label {
+  color: var(--ternary);
+  margin-bottom: 8px;
+}
+section.contact .wrapper .right .form_group > div input {
+  padding: 10px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid var(--dark-blue);
+  color: var(--ternary);
+  font-size: 16px;
+}
+
+section.contact .wrapper .right .form_group > div input:focus {
+  border-color: var(--secondary);
+  outline: none;
+}
+
+section.contact .wrapper .right .form_group.textarea_wrapper {
+  display: block;
+  width: 100%;
 }
