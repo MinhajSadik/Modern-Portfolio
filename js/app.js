@@ -71,7 +71,6 @@ $(document).ready(function(){
         let $wrapper = $('.portfolio_wrapper');
 
         // initialize isotope
-
         $wrapper.isotope({
             filter:'*',
             layoutMode: 'masonry',
@@ -106,6 +105,22 @@ $(document).ready(function(){
                 e.target.classList.add('active');
 
             });
+        })
+
+
+
+
+
+        // Magnify  pop-up
+
+        $('.magnify').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+            zoom:{
+                enabled: true
+            }
         })
 
 });
