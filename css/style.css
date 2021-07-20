@@ -37,7 +37,7 @@ body {
   font-family: "IBM plex Sans", sans-serif;
   background: var(--dark);
   -webkit-font-smoothing: antialiased;
-  height: 4000px;
+  padding-bottom: 4rem;
 }
 h1,
 h2,
@@ -588,4 +588,26 @@ section.contact .wrapper .right button {
 
 section.contact .wrapper .right button:hover {
   background: var(--secondary);
+}
+
+footer {
+  background: var(--footer);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 14px;
+  color: var(--ternary);
+}
+
+/* Media-Querys */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  section.profile {
+    flex-direction: column;
+    align-items: flex-start;
+    clip-path: none;
+  }
 }
