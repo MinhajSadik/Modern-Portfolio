@@ -43,26 +43,27 @@ $(document).ready(function(){
     }
 
     runCounter();
-        // let counterSection = document.querySelectorAll('.counter_section');
-        // // console.log(counterSection);
 
-        // const options = {
-        //     rootMargin: '0px 0px -200px 0px'
-        // }
+        let counterSection = document.querySelectorAll('.counter_section');
+        // console.log(counterSection);
 
-        // let done = 0;
+        const options = {
+            rootMargin: '0px 0px -200px 0px'
+        }
 
-        // const sectionObserver = new IntersectionObserver(function(entries){
+        let done = 0;
 
-        //     if(entries[0].isIntersecting && done !== 1){
-        //         console.log('intersecting...');
-        //         done = 1;
-        //         runCounter();
-        //     }
+        const sectionObserver = new IntersectionObserver(function(entries){
 
-        // }, options)
+            if(entries[0].isIntersecting && done !== 1){
+                console.log('intersecting...');
+                done = 1;
+                runCounter();
+            }
 
-        // sectionObserver.observe(counterSection);
+        }, options)
+
+        sectionObserver.observe(counterSection);
 
         
 
