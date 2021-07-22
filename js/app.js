@@ -44,26 +44,26 @@ $(document).ready(function(){
 
     runCounter();
 
-        let counterSection = document.querySelectorAll('.counter_section');
-        // console.log(counterSection);
+        // let counterSection = document.querySelectorAll('.counter_section');
+        // // console.log(counterSection);
 
-        const options = {
-            rootMargin: '0px 0px -200px 0px'
-        }
+        // const options = {
+        //     rootMargin: '0px 0px -200px 0px'
+        // }
 
-        let done = 0;
+        // let done = 0;
 
-        const sectionObserver = new IntersectionObserver(function(entries){
+        // const sectionObserver = new IntersectionObserver(function(entries){
 
-            if(entries[0].isIntersecting && done !== 1){
-                console.log('intersecting...');
-                done = 1;
-                runCounter();
-            }
+        //     if(entries[0].isIntersecting && done !== 1){
+        //         console.log('intersecting...');
+        //         done = 1;
+        //         runCounter();
+        //     }
 
-        }, options)
+        // }, options)
 
-        sectionObserver.observe(counterSection);
+        // sectionObserver.observe(counterSection);
 
         
 
