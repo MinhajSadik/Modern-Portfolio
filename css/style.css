@@ -500,6 +500,10 @@ section.partners .brands_wrapper {
   align-items: center;
   justify-content: space-around;
 }
+section.partners .brands_wrapper img {
+  width: 100px;
+  height: 80px;
+}
 
 section.contact .wrapper {
   display: grid;
